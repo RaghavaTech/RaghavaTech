@@ -1,0 +1,27 @@
+class Rectangle
+{
+double length,breadth;
+double Area(double l,double b)
+{
+length=l;
+breadth=b;
+return length*breadth;
+}
+double Area(double a)
+{
+length=a;
+return length*length;
+}
+}
+class Overload
+{
+public static void main(String args[])
+{
+double a;
+Rectangle r=new Rectangle();
+a=r.Area(8.5,6.5);
+System.out.println("Area of Rectangle="+a);
+a=r.Area(4.5);
+System.out.println("Area of Square="+a);
+}
+}
